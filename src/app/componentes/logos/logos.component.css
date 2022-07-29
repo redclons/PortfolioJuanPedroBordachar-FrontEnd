@@ -1,0 +1,32 @@
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.redes{
+    margin-right: 10px;
+}
+#logoAp{
+    width: 200px;
+}
+img{
+    width: 50px;
+    background-color: black;
+}
+.btn{
+    border-width: medium;
+}
+/* para mejorar la forma en que se ve cuando achicamos la pantalla*/
+@media(max-width: 575px){
+    .conteiner{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .redes img{
+        margin: 1px;
+    }
+}

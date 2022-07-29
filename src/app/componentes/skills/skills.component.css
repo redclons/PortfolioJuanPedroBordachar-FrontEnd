@@ -1,0 +1,12 @@
+.row {
+  padding: 20px;
+  background: -prefix-linear-gradient(left, rgb(0, 0, 0), rgb(26, 6, 20));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(26, 6, 20));
+}
+div {
+  color: rgba(255, 250, 254, 0.767);
+}
+h1{
+  color: rgba(255, 250, 254, 0.767);
+      text-align: center;
+}

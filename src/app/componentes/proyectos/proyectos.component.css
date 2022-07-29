@@ -1,0 +1,19 @@
+.row{
+    padding: 2rem;
+    background: -prefix-linear-gradient(left, rgb(0, 0, 0), rgb(26, 6, 20));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(26, 6, 20));
+    color: rgba(255, 250, 254, 0.767);
+}
+.contenedor{
+    width: auto;
+}
+.parte1, .parte2{
+    text-align:justify;
+    display: inline-block;
+}
+h1{
+    text-align:center;
+}
+.img-proyecto{
+    box-shadow: 10px 10px 30px rgb(241, 3, 134);
+}

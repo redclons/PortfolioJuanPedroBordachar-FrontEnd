@@ -1,0 +1,21 @@
+.vh-100{
+    background: -prefix-linear-gradient(left, rgb(0, 0, 0), rgb(26, 6, 20));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(26, 6, 20));
+    color: antiquewhite;
+}
+.bg-image-vertical {
+    position: max width;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+    
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    background: -prefix-linear-gradient(left, rgb(0, 0, 0), rgb(26, 6, 20));
+    background: linear-gradient(to right, rgb(0, 0, 0), rgb(26, 6, 20));
+    color:antiquewhite
+    }
+    }

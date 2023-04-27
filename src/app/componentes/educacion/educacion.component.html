@@ -1,18 +1,31 @@
 <div class="row">
-    <h1 id="educaion">Educacion</h1>
-    <div class="col-lg-11"></div>
-    <ul>
-        <li>
-            <h1 class="trabajos">Primer trabajo </h1><h3> (years)</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis possimus impedit doloremque est dolore hic ipsa rem ex corporis consequuntur perferendis, nostrum, quis nisi distinctio sed dicta deserunt. Quia, illum.</p>
-        </li>
-        <li>
-            <h1 class="trabajos">Segundo trabajo </h1><h3> (years)</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis possimus impedit doloremque est dolore hic ipsa rem ex corporis consequuntur perferendis, nostrum, quis nisi distinctio sed dicta deserunt. Quia, illum.</p>
-        </li>
-            <li>
-            <h1 class="trabajos">Tercer trabajo </h1><h3> (years)</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis possimus impedit doloremque est dolore hic ipsa rem ex corporis consequuntur perferendis, nostrum, quis nisi distinctio sed dicta deserunt. Quia, illum.</p>
-        </li>
-    </ul>
+    <h1>Educacion</h1>
+    <div class="col-lg-2">
+        <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+            Agregar Educacion
+        </button>
+    </div>
+
+    <div class="col lg 1"></div>
+    <div class="col-lg-11">
+        <table class="table">
+            <tbody>
+                <tr *ngFor="let Educacion of educacion">
+                    <td>
+                        <h2>{{Educacion.nombreE}}</h2>
+                    </td>
+                    <td>{{Educacion.descripcionE}}</td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" routerLink="/editedu/{{Educacion.id}}">
+                            <i class="bi bi-tools"></i> EDITAR</button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-info" (click)="delete(Educacion.id)">
+                            <i class="bi bi-trash-fill"></i> BORRAR</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </div>
